@@ -73,10 +73,10 @@ const overviewSlides: Slide[] = [
   {
     id: "cover",
     kind: "info",
-    name: "Posture & TRX",
-    day: "12-month home program",
+    name: "Posture TRX Guide",
+    day: "12-month personal program",
     instructions:
-      "A six-days-a-week posture-correction and conditioning program you run at home, on the floor and on a TRX-style suspension trainer. Phase 1 (months 1–6) is corrective mat work: daily posture habits plus three rotating floor routines. Phase 2 (months 7–12) moves the same weekly rhythm onto a TRX suspension circuit. It is posture and conditioning — full stop — not treatment.",
+      "A six-days-a-week posture-correction and conditioning program you run at home, on the floor and on a TRX-style suspension trainer. Phase 1 (months 1–6) is corrective mat work: daily posture habits plus three rotating floor routines. Phase 2 (months 7–12) moves the same weekly rhythm onto a TRX suspension circuit. It is written for one person — you — and it is posture and conditioning, not treatment.",
     note:
       "This is a general posture and mobility/strength program, not medical treatment. If any movement causes sharp or worsening pain, stop and check with a physiotherapist. Go by feel — these are guidelines, not requirements to push through pain.",
     quick: [

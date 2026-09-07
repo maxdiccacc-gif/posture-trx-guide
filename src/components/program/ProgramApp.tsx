@@ -226,10 +226,10 @@ export default function ProgramApp() {
               <span className="-ml-1 size-2.5 rounded-full bg-ember transition group-hover:scale-110" />
             </span>
             <span className="font-display text-[0.95rem] font-bold tracking-tight text-foreground">
-              posture<span className="text-ember">+</span>TRX
+              Posture TRX <span className="text-ember">Guide</span>
             </span>
             <span className="hidden text-xs font-medium text-muted-foreground sm:inline">
-              12-month deck
+              personal · 12 months
             </span>
           </Link>
 

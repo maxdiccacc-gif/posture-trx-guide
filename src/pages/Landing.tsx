@@ -128,7 +128,7 @@ export default function Landing() {
               <span className="-ml-1 size-2.5 rounded-full bg-ember" />
             </span>
             <span className="font-display text-base font-bold tracking-tight">
-              posture<span className="text-ember">+</span>TRX
+              Posture TRX <span className="text-ember">Guide</span>
             </span>
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-medium text-muted-foreground md:flex md:ml-6">
@@ -144,10 +144,10 @@ export default function Landing() {
           </nav>
           <div className="ml-auto flex items-center gap-2 md:ml-0">
             <Link
-              to="/dashboard"
+              to="/program"
               className="inline-flex h-10 items-center gap-1.5 rounded-full bg-foreground px-4 text-sm font-bold text-background transition hover:opacity-85 active:scale-95"
             >
-              Start training
+              Open the deck
               <ArrowRight className="size-4" />
             </Link>
           </div>
@@ -190,11 +190,12 @@ export default function Landing() {
               variants={fadeUp}
               className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground"
             >
-              A corrective-posture and conditioning program for home: daily
-              posture habits, three mat routines in months 1–6, then the same
-              weekly rhythm on a TRX-style suspension trainer in months 7–12.
-              Delivered as a phone-first slide deck — jump to today, swipe
-              through the moves, check them off.
+              A 12-month posture and conditioning program for home, written
+              for one person: you. Months 1–6 are daily posture habits plus
+              three corrective mat routines; months 7–12 run the same weekly
+              rhythm on a TRX-style suspension trainer. Everything is laid out
+              as a swipeable deck, so you can jump straight to today and check
+              moves off as you go.
             </motion.p>
 
             <motion.div
@@ -202,18 +203,18 @@ export default function Landing() {
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
               <Link
-                to="/dashboard"
+                to="/program"
                 className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-base font-bold text-background shadow-sm transition hover:opacity-85 active:scale-[0.98] sm:min-h-14"
               >
-                Start today's routine
+                Open the deck
                 <ArrowRight className="size-5" />
               </Link>
               <Link
-                to="/program"
+                to="/dashboard"
                 className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border-2 border-border bg-card px-6 py-3.5 text-base font-semibold transition hover:border-foreground/50 active:scale-[0.98] sm:min-h-14"
               >
-                <Smartphone className="size-5 text-muted-foreground" />
-                Preview the deck — no account needed
+                <Lock className="size-5 text-muted-foreground" />
+                Continue as guest — one tap
               </Link>
             </motion.div>
             <motion.p
@@ -221,8 +222,8 @@ export default function Landing() {
               className="mt-4 flex items-center gap-1.5 text-xs text-muted-foreground"
             >
               <Lock className="size-3.5" />
-              Signing in is a one-tap guest pass; your check-off progress lives
-              in the browser either way.
+              This is a personal app — your check-off progress is saved in this
+              browser, and the guest sign-in is optional.
             </motion.p>
           </motion.div>
 
@@ -279,12 +280,13 @@ export default function Landing() {
             One rhythm, both phases
           </p>
           <h2 className="mt-2 max-w-2xl font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-            Same week, two phases. Tap a day, do the work.
+            Same week every week — the work changes at month seven.
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Phase 1 (months 1–6) runs the mat routines; Phase 2 (months 7–12)
-            runs the TRX circuits in the same slots. Posture habits apply every
-            day, no matter which phase you're in.
+            In months 1–6 those training days run the corrective mat routines;
+            in months 7–12 the same days run the TRX circuits. The day you
+            train never changes — only the work does — and the posture habits
+            apply every day either way.
           </p>
 
           <div className="mt-9 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -552,23 +554,23 @@ export default function Landing() {
               Tonight's session is a few swipes away.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-background/70">
-              Open the deck, pick the day you're on, and work top to bottom.
-              Ten to twenty minutes on the floor beats another hour hunched at
-              a screen.
+              No queue, no coach, no feed — just the deck you keep coming back
+              to. Pick the day you're on, work top to bottom, and check each
+              move off when it's done.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
-                to="/dashboard"
+                to="/program"
                 className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full bg-background px-7 py-3.5 text-base font-bold text-foreground transition hover:opacity-90 active:scale-[0.98]"
               >
-                Open the training deck
+                Open the deck
                 <ArrowRight className="size-5" />
               </Link>
               <Link
-                to="/program"
+                to="/dashboard"
                 className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border-2 border-background/30 px-6 py-3.5 text-base font-semibold text-background transition hover:border-background/60 active:scale-[0.98]"
               >
-                Browse without signing in
+                Continue as guest — saved session
               </Link>
             </div>
           </div>
@@ -585,13 +587,14 @@ export default function Landing() {
                 <span className="-ml-1 size-2.5 rounded-full bg-ember" />
               </span>
               <span className="font-display text-base font-bold tracking-tight">
-                posture<span className="text-ember">+</span>TRX
+                Posture TRX <span className="text-ember">Guide</span>
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              A 12-month home posture-correction and conditioning program:
-              daily posture habits, corrective mat routines, and a TRX-style
-              circuit. Movement only — no diet or supplement plan.
+              The Posture TRX Guide — a personal 12-month program of daily
+              posture habits, corrective mat routines, and a TRX-style circuit,
+              written for one person: you. Movement only, no diet or supplement
+              plan.
             </p>
             <p className="mt-3 text-xs leading-relaxed text-muted-foreground/80">
               General posture and mobility guidance, not medical treatment. If
@@ -650,7 +653,7 @@ export default function Landing() {
                     to="/dashboard"
                     className="inline-flex items-center gap-1 font-semibold text-foreground transition hover:text-ember"
                   >
-                    Start training <ArrowRight className="size-3.5" />
+                    Continue as guest <ArrowRight className="size-3.5" />
                   </Link>
                 </li>
               </ul>
@@ -659,9 +662,9 @@ export default function Landing() {
         </div>
         <div className="border-t border-border/70">
           <p className="mx-auto w-full max-w-6xl px-4 py-4 text-xs text-muted-foreground sm:px-6">
-            © {new Date().getFullYear()} posture+TRX — a personal reference
-            deck. Posture and conditioning only: no diet, no supplements, no
-            growth claims.
+            © {new Date().getFullYear()} Posture TRX Guide — personal
+            reference deck. Posture and conditioning only: no diet, no
+            supplements, no growth claims.
           </p>
         </div>
       </footer>

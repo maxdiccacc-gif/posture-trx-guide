@@ -130,9 +130,10 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
                       onClick={() => navigate("/")}
                     />
                   </div>
-                <CardTitle className="text-xl">Get Started</CardTitle>
+                <CardTitle className="text-xl">Posture TRX Guide</CardTitle>
                 <CardDescription>
-                  Enter your email to log in or sign up
+                  Personal program — sign in with email, or continue as a
+                  guest below.
                 </CardDescription>
               </CardHeader>
               <form onSubmit={handleEmailSubmit}>
