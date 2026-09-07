@@ -58,16 +58,7 @@ export interface Group {
   kicker: string;
   days: string;
   slides: Slide[];
-}
-
-/* ---------------------------- helpers ---------------------------- */
-
-function youtubeFor(name: string): string {
-  const q = `"${name} tutorial"`;
-  return `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
-}
-
-/* ------------------------ overview group ------------------------- */
+}/* ------------------------ overview group ------------------------- */
 
 const overviewSlides: Slide[] = [
   {

@@ -386,13 +386,11 @@ function WorkoutSlide({
 /* --------------------------- info slides ------------------------- */
 
 function CoverSlide({
-  group,
   accent,
   onJump,
   hasDone,
   onResetAll,
 }: {
-  group: Group;
   accent: PhaseAccent;
   onJump: (gid: string) => void;
   hasDone: boolean;
@@ -743,7 +741,7 @@ export function SlideContent(props: {
   const accent = ACCENTS[group.phase];
 
   if (slide.kind === "info" && slide.id === "cover") {
-    return <CoverSlide group={group} accent={accent} onJump={props.onJump} hasDone={props.hasDone} onResetAll={props.onResetAll} />;
+    return <CoverSlide accent={accent} onJump={props.onJump} hasDone={props.hasDone} onResetAll={props.onResetAll} />;
   }
   if (slide.kind === "info" && slide.id === "schedule") {
     return <ScheduleSlide onJump={props.onJump} />;
