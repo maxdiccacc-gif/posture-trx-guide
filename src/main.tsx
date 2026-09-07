@@ -11,11 +11,15 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import "./index.css";
 import "./types/global.d.ts";
 
-// Lazy load route components for better code splitting
-const Landing = lazy(() => import("./pages/Landing.tsx"));
+// The primary routes (landing + deck) are imported eagerly: they are the whole
+// app's first paint, and eager imports avoid stale HMR-invalidated dynamic
+// module fetches in the managed dev environment.
+import Landing from "./pages/Landing.tsx";
+import Program from "./pages/Program.tsx";
+
+// Lazy load the remaining route components for better code splitting
 const AuthPage = lazy(() => import("./pages/Auth.tsx"));
 const Dashboard = lazy(() => import("./pages/Dashboard.tsx"));
-const Program = lazy(() => import("./pages/Program.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 // Simple loading fallback for route transitions
